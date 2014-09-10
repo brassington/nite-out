@@ -11,3 +11,4 @@ pids
 *.seed
 build/
 dist/
+oldClient/
