@@ -1,29 +1,5 @@
 <div id="container">
   <div class="search-bar">
- <!--    <form ng-submit="conductSearch(input, type)" novalidate>
-      <input class="search-box" type="text" ng-model="input" required autofocus placeholder="Enter Zipcode"/>
-      <select
-        class="select-box"
-        ng-init="type = options[0]"
-        ng-model="type"
-        ng-options="option.name for option in options">
-      </select> -->
-      <div class="list">
-        <label class="item item-input">
-          <input class="search-box" ng-model="input" type="text" placeholder="Search postcode here" required autofocus>
-        </label>
-        <button class="button" ng-click="conductSearch(input, type)">
-          Search
-        </button>
-      </div>
-    </form>
-  </div>
-  <div id="main" ui-view></div>
-</div>
-
-
-<!-- <div id="container">
-  <div class="search-bar">
     <form ng-submit="conductSearch(input, type)" novalidate>
       <input class="search-box" type="text" ng-model="input" required autofocus placeholder="Enter Zipcode"/>
       <select
@@ -33,6 +9,22 @@
         ng-options="option.name for option in options">
       </select>
     </form>
+  </div>
+  <div id="main" ui-view></div>
+</div>
+
+
+
+<!-- <div id="container">
+  <div class="search-bar list row">
+    <div class="col col-75">
+      <label class="item item-input">
+        <input class="search-box" ng-model="input" type="text" placeholder="Enter Postcode" required autofocus>
+      </label>
+    </div>
+    <div class="col col-25">
+      <button class="button button-calm" ng-click="conductSearch(input, type)">Search</button>
+    </div>
   </div>
   <div id="main" ui-view></div>
 </div>

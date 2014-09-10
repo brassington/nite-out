@@ -18,6 +18,7 @@ angular.module('nite-out', [
   'nite-out.eventFactory',
   'nite-out.restaurants',
   'nite-out.restaurantFactory',
+  // 'nite-out.sidemenu',
   'ui.router',
   'ionic'
 ])
@@ -25,6 +26,18 @@ angular.module('nite-out', [
 .config(['$urlRouterProvider',
   function($urlRouterProvider) {
     $urlRouterProvider.otherwise('/main');
+  }
+])
+
+.controller('MainCtrl', ['$scope', '$ionicSideMenuDelegate',
+  function($scope, $ionicSideMenuDelegate) {
+    $scope.test = "HAHAHA";
+
+    $scope.toggleLeft = function() {
+      console.log("SUP");
+      $ionicSideMenuDelegate.toggleLeft();
+    };
+
   }
 ])
 
@@ -81,6 +94,14 @@ angular.module('nite-out', [
     restrict: 'EA',
     replace: true,
     templateUrl: 'app/cart/cart.html'
+  };
+})
+
+.directive('sideMenu', function() {
+  return {
+    restrict: 'EA',
+    replace: true,
+    templateUrl: 'app/sidemenu/sidemenu.html'
   };
 })
 

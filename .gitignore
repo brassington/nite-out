@@ -12,3 +12,7 @@ pids
 build/
 dist/
 oldClient/
+oldIndex.html
+test.html
+testapp.js
+client/app/sidemenu/
