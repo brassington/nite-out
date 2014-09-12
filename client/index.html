@@ -19,19 +19,21 @@
   <body ng-controller="MainCtrl">
       <ion-side-menus>
         <ion-side-menu-content>
-          <button ng-click="toggleLeft()">CLICK TO TOGGLE</button>
-          <h1 ui-sref="main">NiteOut</h1>
+          <h1 ui-sref="main"></h1>
             <div ui-view></div>
         </ion-side-menu-content>
         <ion-side-menu side="left">
           <ion-header-bar class="bar-assertive">
-            <h1 class="title">Left Menu</h1>
+            <h1 class="title">Cart</h1>
           </ion-header-bar>
           <ion-content>
-            <ul class="list">
-              <h4>HI, {{test}}</h4>
-            </ul>
-          </ion-content>
+
+          <ul class="list">
+          <li ng-controller="cartController">
+            <cart></cart>
+          </li>
+          </ul>
+        </ion-content>
         </ion-side-menu>
       </ion-side-menus>
     <script src="bower_components/lodash/dist/lodash.min.js"></script>

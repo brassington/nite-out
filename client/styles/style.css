@@ -1,7 +1,12 @@
 body {
+  margin-top: 40rem;
   background-color: #202020;
   color: #6C8A95;
   font-family: 'Open Sans', sans-serif;
+}
+
+div#main {
+  margin-top: 4rem;
 }
 
 .angular-google-map-container {
@@ -21,7 +26,7 @@ body {
 h1, h2, h3{
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
-  color: #F0A83A;
+  color: #444444;
 }
 
 .event {
@@ -31,7 +36,6 @@ h1, h2, h3{
 }
 
 .event:hover{
-  background-color: #4B433D;
   cursor: pointer;
 }
 
@@ -116,7 +120,7 @@ h1, h2, h3{
 }
 
 .spinner > div {
-  background-color: #F0A83A;
+  background-color: #444444;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -240,7 +244,7 @@ h1, h2, h3{
 
 .market {
   font-size: 1.6em;
-  color: #F0A83A;
+  color: #444444;
 }
 
 .checkout {

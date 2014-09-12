@@ -1,17 +1,35 @@
-<div id="container">
-  <div class="search-bar">
-    <form ng-submit="conductSearch(input, type)" novalidate>
-      <input class="search-box" type="text" ng-model="input" required autofocus placeholder="Enter Zipcode"/>
-      <select
-        class="select-box"
-        ng-init="type = options[0]"
-        ng-model="type"
-        ng-options="option.name for option in options">
-      </select>
-    </form>
+  <ion-tabs class="tabs-top tabs-background-dark tabs-icon-only">
+  <ion-tab title="Home" icon-on="ion-ios7-film" icon-off="ion-ios7-film-outline">
+  <!-- <button ng-click="toggleLeft()">CLICK TO TOGGLE</button> -->
+  <div class="bar bar-header item-input-inset">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios7-search placeholder-icon"></i>
+      <input type="search" ng-model="input" required autofocus placeholder="Enter Zipcode"/>
+    </label>
+     <select
+    class="select-box"
+    ng-init="type = options[0]"
+    ng-model="type"
+    ng-options="option.name for option in options">
+  </select> 
+    <button class="button button-clear" ng-click="conductSearch(input, type)">
+      Search
+    </button>
   </div>
   <div id="main" ui-view></div>
-</div>
+
+      </ion-tab>
+
+  <ion-tab title="About" icon-on="ion-ios7-football" icon-off="ion-ios7-football-outline">
+    <!-- Tab 2 content -->
+  </ion-tab>
+
+  <ion-tab title="Settings" icon-on="ion-ios7-musical-notes" icon-off="ion-ios7-musical-note">
+    <!-- Tab 3 content -->
+  </ion-tab>
+
+  </ion-tabs>
 
 
 

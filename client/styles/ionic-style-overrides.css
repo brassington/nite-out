@@ -1,3 +1,7 @@
 body, .ionic-body {
 	bottom: inherit;
 }
+
+ion-header-bar.bar-assertive.bar.bar-header.disable-user-behavior {
+  background-color: #A9342C;
+}
